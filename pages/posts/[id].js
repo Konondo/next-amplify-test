@@ -8,11 +8,7 @@ export default function PostComponent({ post }) {
   if (router.isFallback) {
     return <div>Loading...</div>;
   }
-  return (
-    <div>
-      <ReactMarkdown children={post.content} />
-    </div>
-  );
+  return <div>{/* <ReactMarkdown children={post.content} /> */}</div>;
 }
 
 export async function getStaticPaths(req) {
