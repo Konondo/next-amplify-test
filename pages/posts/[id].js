@@ -1,6 +1,6 @@
 import { withSSRContext } from "aws-amplify";
 import { Post } from "../../src/models";
-import Markdown from "react-markdown";
+import ReactMarkdown from "react-markdown";
 import { useRouter } from "next/router";
 
 export default function PostComponent({ post }) {
@@ -10,7 +10,7 @@ export default function PostComponent({ post }) {
   }
   return (
     <div>
-      <Markdown children={post.content} />
+      <ReactMarkdown children={post.content} />
     </div>
   );
 }
